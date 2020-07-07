@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="w3.css">
+    <title>ClASSROOM</title>
+</head>
+<body>
+    <header class="w3-container w3-red">
+        <h1>Header</h1>
+        </header>
+        <div class="w3-row-padding w3-section">
+
+            <div class="w3-half">
+              <div class="w3-card-2">
+                <img src="img_london.png" alt="London" style="width:100%">
+                <div class="w3-container">
+            <p>London is the capital city of England.</p>
+            <p>It is the most populous city in the United Kingdom,
+            with a metropolitan area of over 13 million inhabitants.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="w3-half">
+              <div class="w3-card-2">
+                <img src="img_london.png" alt="London" style="width:100%">
+                <div class="w3-container">
+            <p>London is the capital city of England.</p>
+            <p>It is the most populous city in the United Kingdom,
+            with a metropolitan area of over 13 million inhabitants.</p>
+                </div>
+              </div>
+            </div>
+
+            
+
+
+
+
+            
+            </div>
+    <!--<embed src="file.pdf" type="application/pdf" width="100%" height 
+    ="600px"/>-->
+    
+</body>
+</html>
+
+<div class="w3-row-padding" style="background-color:black;">
+    <% title.forEach(function(title){%> 
+    <div class="w3-half">
+        <div class="w3-tag w3-gray"> 
+            <span class="w3-opacity"><%=title.name%></span>
+            <div class="w3-container" 
+            style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; width: 40%;"
+            
+            > <%=title.comment%>   
+    </div>
+</div>
+    </div>
+    <%})%>
+
+</div>

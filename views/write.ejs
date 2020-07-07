@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel="stylesheet" href="w3.css">
+    <script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+         <header class="w3-container w3-pink" >
+        <h1 class="w3-tag w3-yellow">Local Classroom</h1>
+        <h1 class="w3-tag w3-yellow" style="float: right;">J.S</h1>
+        </header>
+    <div class="w3-container w3-aqua">
+<form method="POST" action="/write" class="w3-container">
+    <br>
+  <input type="text" id="fname" name="name" required class="w3-input w3-animate-input" placeholder="Your Name">
+  <br>
+  <textarea 
+  placeholder="write here" 
+  name="comment" style="width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  font-size:small;
+  font-style: italic;  "
+  required>
+</textarea> 
+ <script type="text/javascript">
+      </script>
+
+<center> <br>
+    <button type="submit" onclick="alert('Done')" class="w3-btn w3-blue" >SEND</button>
+
+  </center> 
+</form>
+</div> 
+
+<div class="w3-container">
+    <center>
+    <p><span class="w3-badge w3-green">U</span>
+<span class="w3-badge w3-red">P</span>
+<span class="w3-badge w3-dark-yellow">D</span>
+<span class="w3-badge w3-dark-white">A</span>
+<span class="w3-badge w3-dark-blue">T</span>
+<span class="w3-badge w3-dark-grey">E</span>
+<span class="w3-badge w3-dark-grey">S</span></p>
+</center>
+ </div>
+    
+    <div class="w3-row-padding">
+    <% title.forEach(function(title){%> 
+    <div class="w3-row w3-border">
+        <div class="w3-quarter w3-container " style="background-color: darkseagreen; border-radius: 12%; height:fit-content;">
+            <h6 style="text-align: justify; color: blueviolet;"> 
+                <i> <p style="font-size:small;"><b><pre style="white-space:pre-line;">by: <%=title.name%>,<br/> <p style="font-size: x-small;"><%=title.date%></p>  </b></h6>  
+                    <p><code><pre><%=title.comment%></p> </pre></code><br/> 
+          </div>
+          <%})%>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
